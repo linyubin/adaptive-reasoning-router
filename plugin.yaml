@@ -1,0 +1,8 @@
+name: adaptive-reasoning-router
+version: 0.1.0
+description: "Per-turn reasoning-effort routing: classifies each user turn's difficulty (heuristic lane, zero added latency) and rewrites the outbound request's reasoning_effort down for simple questions — fast responses without touching the global config."
+author: "linyubin"
+license: MIT
+requires_hermes: ">=0.21.5"
+provides_middleware:
+  - llm_request
